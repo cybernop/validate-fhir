@@ -15,3 +15,8 @@ runs:
       shell: bash
     - run: java -jar validator_cli.jar -html-output validation.html -version ${{ inputs.fhir-version }} fsh-generated/resources
       shell: bash
+    - if: ${{ always() }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: Verification
+        path: verification.html
