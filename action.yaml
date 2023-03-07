@@ -18,5 +18,5 @@ runs:
     - if: ${{ always() }}
       uses: actions/upload-artifact@v3
       with:
-        name: Verification
-        path: verification.html
+        name: Validation
+        path: validation.html
