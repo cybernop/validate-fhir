@@ -1,5 +1,5 @@
-name: "Verify FHIR Profiles"
-description: "Verify FHIR profiles using the Java FHIR validator"
+name: "Validate FHIR Profiles"
+description: "Validate FHIR profiles using the Java FHIR Validator"
 inputs:
   fhir-version:
     description: "Version FHIR to be validated against"
